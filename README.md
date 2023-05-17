@@ -1,2 +1,0 @@
-# thentich.github.io
-Website
