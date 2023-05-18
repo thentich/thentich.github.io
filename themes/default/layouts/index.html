@@ -1,19 +1,7 @@
 {{ define "main" }}
-  <main aria-role="main">
-    <header class="homepage-header">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.subtitle }}
-      <span class="subtitle">{{ . }}</span>
-      {{ end }}
-    </header>
-    <div class="homepage-content">
-      <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-      {{ .Content }}
-    </div>
-    <div>
-      {{ range first 10 .Site.RegularPages }}
-          {{ .Render "summary" }}
-      {{ end }}
-    </div>
-  </main>
+<main class="items-center flex-col items-center text-center">
+    <img src="{{ "img/logo.png" | relURL }}" alt="logo" class="">
+    <h1 class="text-8xl font-bold text-center dark:text-white">Thenti</h1>
+    <h1 class="text-xl font-bold text-center dark:text-white">Au<span class="text-main">thenti</span>cate Everything</h1>
+</main>
 {{ end }}
