@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 {{- partial "head.html" . -}}
-<body class="dark">
-    {{- partial "header.html" . -}}
-    <div class="flex justify-center items-center w-full min-h-screen dark:bg-gray-800 bg-white">
+<body class="bg-gray-800 text-white">
+    <div class="w-full min-h-screen">
+        {{- partial "header.html" . -}}
         {{- block "main" . }}{{- end }}
+        {{- partial "footer.html" . -}}
     </div>
-    {{- partial "footer.html" . -}}
 </body>
+
 </html>
